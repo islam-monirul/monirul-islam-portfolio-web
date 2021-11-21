@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import FilledButton from "./Components/Buttons/FilledButton/FilledButton";
+import AllComponents from "./Components/AllComponents";
 
 function App() {
   return (
     <div className="App">
-      <FilledButton text={"TEST BUTTON"}></FilledButton>
+      <AllComponents></AllComponents>
     </div>
   );
 }

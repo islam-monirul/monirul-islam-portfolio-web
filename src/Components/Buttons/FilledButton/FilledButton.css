@@ -1,7 +1,7 @@
 .filled-btn {
   background-color: #dc143c !important;
   color: #fff;
-  transition: background-color 1s ease !important;
+  transition: background-color 0.7s ease !important;
 }
 
 .filled-btn:hover {

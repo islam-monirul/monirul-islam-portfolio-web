@@ -1,0 +1,11 @@
+.outlined-btn {
+  background-color: transparent;
+  color: #dc143c !important;
+  border-color: #dc143c !important;
+  transition: all 0.7s ease !important;
+}
+
+.outlined-btn:hover {
+  background-color: #dc143c !important;
+  color: #fff !important;
+}
