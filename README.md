@@ -4,16 +4,17 @@ This is my personal portfolio website repository.
 
 ### Used Technologies
 
-     Frontend : {
-          React.js,
-          React-Bootstrap,
-          Custom-css
-     },
-     Backend : {
-          Node.js,
-          Express.js,
-          MongoDB
-     },
-     Routing: {
-          React-Router-v5
-     }
+     [
+          frontend : {
+               React.js,
+               React-Bootstrap,
+               Custom-css
+          },
+          backend : {
+               Node.js,
+               Express.js,
+               MongoDB
+          },
+          routing: React-Router-v5,
+          adminAuthentication : Firebase
+     ]
