@@ -5,9 +5,13 @@ import "./FilledButton.css";
 const FilledButton = (props) => {
   const { text } = props;
 
-  const commonClass = "filled-btn border-0 my-3";
+  let commonClass = "";
   let buttonWidth = "";
   let buttonAlign = "";
+
+  props?.color === "white"
+    ? (commonClass = "filled-btn-white border-0 my-3")
+    : (commonClass = "filled-btn border-0 my-3");
 
   props?.width === 25 ? (buttonWidth = "w-25") : (buttonWidth = "");
 
