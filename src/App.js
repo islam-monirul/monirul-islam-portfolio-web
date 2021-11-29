@@ -10,13 +10,13 @@ import About from "./Pages/About/About";
 import Education from "./Pages/Education/Education";
 import WorkExperience from "./Pages/WorkExperience/WorkExperience";
 import Skills from "./Pages/Skills/Skills";
-import { Container } from "react-bootstrap";
+import TopBar from "./Components/TopBar/TopBar";
 
 function App() {
   return (
     <BrowserRouter>
       <section>
-        <Container className="py-4" fluid></Container>
+        <TopBar></TopBar>
       </section>
       <section className="mainContainer">
         <div className="sideBar">

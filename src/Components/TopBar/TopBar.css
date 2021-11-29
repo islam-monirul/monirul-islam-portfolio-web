@@ -1,0 +1,15 @@
+.topbar {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: none;
+}
+
+.topbarLogo {
+  width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .topbar {
+    display: block;
+  }
+}
