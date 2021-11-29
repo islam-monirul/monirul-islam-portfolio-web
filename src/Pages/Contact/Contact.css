@@ -1,0 +1,15 @@
+.contactBtn {
+  background-color: #23d5ab !important;
+  color: #fff !important;
+  border: 0;
+  transition: all 0.5s ease;
+}
+
+.contactBtn:hover {
+  background-color: var(--colorGrey) !important;
+}
+
+.form-control:focus {
+  border-color: #23d5ab;
+  box-shadow: none;
+}
