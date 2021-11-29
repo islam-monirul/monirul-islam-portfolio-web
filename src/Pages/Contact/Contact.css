@@ -13,3 +13,13 @@
   border-color: #23d5ab;
   box-shadow: none;
 }
+
+.socialLinkBox {
+  background-color: var(--colorGrey);
+  border: none;
+  border-radius: 0;
+}
+
+.socialLinkBox:hover {
+  background-color: var(--colorSecondary);
+}
