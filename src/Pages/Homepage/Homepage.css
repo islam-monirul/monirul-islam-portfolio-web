@@ -2,8 +2,59 @@
   width: 50%;
 }
 
+.customPrimaryText {
+  color: var(--colorPrimary);
+}
+.customSecondaryText {
+  color: var(--colorSecondary);
+}
+
+.introText {
+  text-align: justify;
+}
+
+.primaryBtn {
+  background-color: var(--colorPrimary);
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.secondaryBtn {
+  background-color: var(--colorSecondary);
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  background-color: var(--colorGrey);
+}
+
+.primaryBtn:focus,
+.secondaryBtn:focus {
+  background-color: var(--colorGrey) !important;
+  box-shadow: none;
+  border: none;
+}
+
 @media screen and (min-width: 1000px) {
   .maindp {
     width: 15%;
+  }
+
+  .introText {
+    width: 50%;
+  }
+
+  .buttonBox {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .primaryBtn,
+  .secondaryBtn {
+    display: block;
+    width: 100%;
   }
 }
