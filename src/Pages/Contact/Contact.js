@@ -91,6 +91,7 @@ const Contact = () => {
               <Button
                 className="socialLinkBox"
                 onClick={() => window.open(`${link?.link}`, "_blank")}
+                key={link?.link}
               >
                 {link?.name === "github" ? (
                   <FaGithub />
@@ -105,7 +106,11 @@ const Contact = () => {
         </Col>
         <Col md={6} lg={6} className="mt-5 mt-md-0">
           {loading ? (
-            <Spinner animation="grow" variant="success" />
+            <Spinner
+              animation="grow"
+              variant="success"
+              className="d-block mx-auto"
+            />
           ) : (
             <>
               {success && (
