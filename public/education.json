@@ -1,0 +1,26 @@
+[
+  {
+    "degree": "Bachelor of Science",
+    "subject": "Computer Science & Engineering",
+    "institute": "United International University",
+    "passingYear": "2017 - 2021",
+    "result": 3.68,
+    "outOf": 4.0
+  },
+  {
+    "degree": "Higher Secondary Certificate",
+    "subject": "Science",
+    "institute": "Engineering University School & College",
+    "passingYear": "2016",
+    "result": 4.92,
+    "outOf": 5.0
+  },
+  {
+    "degree": "Secondary School Certificate",
+    "subject": "Science",
+    "institute": "Engineering University School & College",
+    "passingYear": "2013",
+    "result": 5.0,
+    "outOf": 5.0
+  }
+]

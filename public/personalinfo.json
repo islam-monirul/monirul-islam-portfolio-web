@@ -1,0 +1,20 @@
+{
+  "name": "Monirul Islam",
+  "dob": "9 July, 1998",
+  "birthYear": 1998,
+  "aboutmeShortDesc": "I have recently completed my graduation on Computer Science & Engineering from United International University. I am working as a freelance Full Stack Web Developer for past 1-2 years. I currently work with : React,js/Next.js, Node.js, Express.js, MongoDB, TypeScript, React-bootstrap etc. I also have real life working experience with JavaScript, PHP, Laravel, MySQL, Wordpress and many more.",
+  "freelanceShortDesc": "I am also working as a freelance developer & designer in different freelance marketplaces like Fiverr & Upwork. While working as a freelancer, I have already worked with clients from 17 different countries all over the world.",
+  "currentCity": "Dhaka",
+  "currentCountry": "Bangladesh",
+  "from": "Dhaka, Bangladesh",
+  "phone": "+8801521334471",
+  "email": "devmonir.uiu.cse@gmail.com",
+  "job": {
+    "currentDesignation": "Software Developer (Intern)",
+    "currentCompany": "HeadLess Technologies Ltd.",
+    "timePeriod": "August, 2021 - Present"
+  },
+  "projects": 120,
+  "clients": 100,
+  "experience": 2
+}

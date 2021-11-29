@@ -1,0 +1,50 @@
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.5s ease;
+
+  position: relative;
+}
+
+.icon {
+  color: #23a6d5;
+  transition: all 1s ease;
+}
+
+.iconBox:hover {
+  background-color: #23a6d5;
+}
+
+.iconBox:hover .icon {
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.iconTooltip {
+  background-color: #fff;
+  position: absolute;
+  top: 0.4rem;
+  left: 3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  transition: all 1s ease;
+}
+
+.iconBox:hover .iconTooltip {
+  opacity: 1;
+}

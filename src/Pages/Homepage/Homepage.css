@@ -1,0 +1,9 @@
+.maindp {
+  width: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+  .maindp {
+    width: 15%;
+  }
+}

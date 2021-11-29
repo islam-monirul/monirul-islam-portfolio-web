@@ -1,21 +1,62 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import Homepage from "./Pages/Homepage/Homepage";
 import NotFound from "./Pages/NotFound/NotFound";
+import Projects from "./Pages/Projects/Projects";
+import Contact from "./Pages/Contact/Contact";
+import About from "./Pages/About/About";
+import Education from "./Pages/Education/Education";
+import WorkExperience from "./Pages/WorkExperience/WorkExperience";
+import Skills from "./Pages/Skills/Skills";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <Homepage />
-        </Route>
+      <section>
+        <Container className="py-4" fluid></Container>
+      </section>
+      <section className="mainContainer">
+        <div className="sideBar">
+          <Sidebar></Sidebar>
+        </div>
+        <div className="gap"></div>
 
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
+        <div className="mainBody">
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Route path="/home">
+              <Homepage></Homepage>
+            </Route>
+            <Route path="/projects">
+              <Projects></Projects>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <Route path="/education">
+              <Education></Education>
+            </Route>
+            <Route path="/experience">
+              <WorkExperience></WorkExperience>
+            </Route>
+            <Route path="/skills">
+              <Skills></Skills>
+            </Route>
+
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+        </div>
+      </section>
     </BrowserRouter>
   );
 }

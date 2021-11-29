@@ -1,10 +1,13 @@
 import React from "react";
+import { Container, Image } from "react-bootstrap";
+import logo from "../../images/mainDP.png";
+import "./Homepage.css";
 
 const Homepage = () => {
   return (
-    <div>
-      <h1>This is Homepage</h1>
-    </div>
+    <Container>
+      <Image src={logo} className="img-fluid d-block mx-auto maindp" />
+    </Container>
   );
 };
 
