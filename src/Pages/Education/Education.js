@@ -12,7 +12,7 @@ const Education = () => {
   const [educations, setEducations] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/education")
+    fetch("https://mighty-reef-51320.herokuapp.com/education")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
@@ -23,6 +23,7 @@ const Education = () => {
   return (
     <Container>
       <Row className="d-flex justify-content-center">
+        <h1 className="gradientHeading text-center">Education</h1>
         <Col md={9} className="py-4">
           <VerticalTimeline>
             {educations?.map((education) => (
