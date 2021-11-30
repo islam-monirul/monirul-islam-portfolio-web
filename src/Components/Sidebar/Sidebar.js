@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Sidebar.css";
 import {
   FaHome,
@@ -13,15 +13,28 @@ import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+  const [active, setActive] = useState(0);
+
+  const changeNav = (num) => {
+    setActive(num);
+  };
+
   return (
     <div className="sideNav">
-      <Button variant="transparent" className="iconBox" as={NavLink} to="/home">
+      <Button
+        variant="transparent"
+        className={active === 0 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(0)}
+        as={NavLink}
+        to="/home"
+      >
         <p className="iconTooltip">Home</p>
         <FaHome className="icon" />
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 1 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(1)}
         as={NavLink}
         to="/about"
       >
@@ -30,7 +43,8 @@ const Sidebar = () => {
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 2 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(2)}
         as={NavLink}
         to="/skills"
       >
@@ -39,7 +53,8 @@ const Sidebar = () => {
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 3 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(3)}
         as={NavLink}
         to="/projects"
       >
@@ -48,7 +63,8 @@ const Sidebar = () => {
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 4 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(4)}
         as={NavLink}
         to="/education"
       >
@@ -57,7 +73,8 @@ const Sidebar = () => {
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 5 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(5)}
         as={NavLink}
         to="/experience"
       >
@@ -66,7 +83,8 @@ const Sidebar = () => {
       </Button>
       <Button
         variant="transparent"
-        className="iconBox"
+        className={active === 6 ? "iconBox activeIconBox" : "iconBox"}
+        onClick={() => changeNav(6)}
         as={NavLink}
         to="/contact"
       >
