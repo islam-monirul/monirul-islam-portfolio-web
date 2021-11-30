@@ -6,7 +6,7 @@ import mainlogo from "../../images/LOGO.png";
 
 const TopBar = () => {
   return (
-    <Navbar bg="light" expand={false} className="topbar">
+    <Navbar variant="dark" expand={false} className="topbar">
       <Container fluid>
         <Navbar.Brand as={NavLink} to="/">
           <Image src={mainlogo} className="img-fluid topbarLogo" />

@@ -23,7 +23,7 @@ const Education = () => {
   return (
     <Container>
       <Row className="d-flex justify-content-center">
-        <Col md={9} className="">
+        <Col md={9} className="py-4">
           <VerticalTimeline>
             {educations?.map((education) => (
               <VerticalTimelineElement

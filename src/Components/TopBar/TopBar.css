@@ -1,11 +1,27 @@
 .topbar {
   margin-bottom: 1rem;
   border-radius: 5px;
+  background-color: var(--colorGrey);
   display: none;
 }
 
 .topbarLogo {
   width: 40%;
+}
+
+.navbar-toggler {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--colorPrimary),
+      var(--colorSecondary)
+    )
+    1;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 @media screen and (max-width: 767px) {
