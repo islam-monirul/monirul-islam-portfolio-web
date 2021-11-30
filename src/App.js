@@ -11,6 +11,7 @@ import Education from "./Pages/Education/Education";
 import WorkExperience from "./Pages/WorkExperience/WorkExperience";
 import Skills from "./Pages/Skills/Skills";
 import TopBar from "./Components/TopBar/TopBar";
+import SingleProject from "./Components/SingleProject/SingleProject";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/projects">
               <Projects></Projects>
+            </Route>
+            <Route path="/projectDetails/:projectId">
+              <SingleProject></SingleProject>
             </Route>
             <Route path="/about">
               <About></About>

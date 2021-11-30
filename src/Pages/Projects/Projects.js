@@ -1,12 +1,20 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Container, Row, Spinner } from "react-bootstrap";
 import Project from "../../Components/Project/Project";
-import { MyProjects } from "../../Data/Data";
 
 const Projects = () => {
+  const [filter, setFilter] = useState("all");
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://mighty-reef-51320.herokuapp.com/projects/${filter}`)
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, [filter]);
+
   return (
     <Container>
-      <h1 className="text-center">My Projects</h1>
+      <h1 className="gradientHeading text-center">My Projects</h1>
       <Row
         xs={1}
         md={2}
@@ -14,9 +22,17 @@ const Projects = () => {
         className="g-5 py-4"
         style={{ marginRight: "0", marginLeft: "0" }}
       >
-        {MyProjects.map((project) => (
-          <Project key={project.name} project={project}></Project>
-        ))}
+        {projects.length > 0 ? (
+          projects.map((project) => (
+            <Project key={project._id} project={project}></Project>
+          ))
+        ) : (
+          <Spinner
+            animation="grow"
+            className="d-block mx-auto"
+            variant="white"
+          ></Spinner>
+        )}
       </Row>
     </Container>
   );

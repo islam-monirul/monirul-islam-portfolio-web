@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 import { Col, Container, Row } from "react-bootstrap";
 
 const WorkExperience = () => {
@@ -29,7 +29,7 @@ const WorkExperience = () => {
                 className="vertical-timeline-element"
                 date={work?.workPeriod}
                 iconStyle={{ background: "#23d5ab", color: "#fff" }}
-                icon={<FaGraduationCap />}
+                icon={<FaBriefcase />}
                 key={work?._id}
               >
                 <h6 className="vertical-timeline-element-title">

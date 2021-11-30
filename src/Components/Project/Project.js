@@ -1,29 +1,34 @@
 import React from "react";
-import { Card, Col, Button } from "react-bootstrap";
+import { Col, Button, Image } from "react-bootstrap";
+import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import "./Project.css";
 
 const Project = (props) => {
-  const { name, category, image } = props.project;
+  const { name, image, liveLink, _id } = props.project;
 
-  const projectDetails = "";
+  const url = `projectDetails/${_id}`;
 
   return (
     <Col>
-      <Card className="h-100 bg-transparent projectCard">
-        <Card.Img src={image} className="img-fluid projectImg" />
-        <Card.Body>
-          <h6>{name}</h6>
-          <p className="text-secondary">{category}</p>
-        </Card.Body>
-        <Card.Footer className="border-0 bg-transparent">
-          <div className="d-grid gap-2">
-            <Button as={NavLink} to={projectDetails} className="btn-dark">
-              View Details
+      <figure className="figurebox p-2">
+        <Image src={image} className="img-fluid projectImg" />
+        <figcaption className="hoverItems">
+          <h5 className="fw-bold gradientHeading">{name}</h5>
+          <div>
+            <Button
+              className="projectBtn"
+              onClick={() => window.open(`${liveLink}`, "_blank")}
+            >
+              <FaExternalLinkAlt />
+            </Button>
+
+            <Button className="projectBtn" as={NavLink} to={url}>
+              <FaInfoCircle />
             </Button>
           </div>
-        </Card.Footer>
-      </Card>
+        </figcaption>
+      </figure>
     </Col>
   );
 };

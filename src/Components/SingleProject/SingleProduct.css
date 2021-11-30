@@ -1,0 +1,49 @@
+.details {
+  list-style-type: circle;
+}
+.details li {
+  padding: 5px 0;
+}
+
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techBox {
+  padding: 5px 10px;
+  background: linear-gradient(
+    to right bottom,
+    var(--colorPrimary),
+    var(--colorSecondary)
+  );
+  color: var(--colorWhite);
+  transition: all 0.5s ease;
+}
+
+.techBox:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--colorSecondary),
+    var(--colorPrimary)
+  );
+}
+
+.linkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.linkButton {
+  background-color: var(--colorSecondary);
+  border: 1px solid var(--colorSecondary);
+
+  transition: all 0.5s ease;
+}
+
+.linkButton:hover {
+  background-color: var(--colorGrey);
+  border: 1px solid var(--colorGrey);
+}

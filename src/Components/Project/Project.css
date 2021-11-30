@@ -12,10 +12,48 @@
   transform: translateY(-25px);
 }
 
-/* .projectImg {
+.projectBtn {
+  background-color: var(--colorSecondary);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
   transition: all 0.5s ease;
 }
 
-.projectImg:hover {
-  transform: scale(1.4);
-} */
+.projectBtn:hover {
+  background-color: var(--colorPrimary);
+  border: none;
+}
+
+.figurebox {
+  position: relative;
+  border: 1px solid var(--colorSecondary);
+  overflow: hidden;
+}
+
+.hoverItems {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+
+  transform: translateY(-50%);
+
+  opacity: 0;
+
+  transition: all 0.5s ease;
+}
+
+.projectImg {
+  transition: all 0.5s ease;
+}
+
+.figurebox:hover .projectImg {
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+.figurebox:hover .hoverItems {
+  opacity: 1;
+}
