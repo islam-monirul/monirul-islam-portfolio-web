@@ -19,7 +19,7 @@ const SingleProject = () => {
       <Row className="py-5">
         {project && (
           <>
-            <Col>
+            <Col lg={6} sm={12} className="py-4">
               <h1 className="gradientHeading fw-bold mb-4">{project?.name}</h1>
               <h5 className="fw-bold">Project Description</h5>
               <ul className="details">
@@ -71,10 +71,11 @@ const SingleProject = () => {
               </div>
             </Col>
 
-            <Col md={6}>
-              <div className="p-2 border">
-                <Image src={project?.screenshot} className="img-fluid" />
-              </div>
+            <Col lg={6} sm={12} className="py-4">
+              <Image
+                src={project?.screenshot}
+                className="img-fluid p-2 border"
+              />
             </Col>
           </>
         )}

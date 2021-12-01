@@ -78,7 +78,8 @@ export const MyProjects = [
 ];
 
 export const Category = [
-  "React.js",
+  "All",
+  "React",
   "MERN",
   "JavaScript",
   "PHP",

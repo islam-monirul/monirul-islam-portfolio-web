@@ -1,0 +1,32 @@
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categoryBox {
+  padding: 5px 10px;
+  border: 1px solid var(--colorSecondary);
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+.categoryBox:hover {
+  background: linear-gradient(
+    to right bottom,
+    var(--colorPrimary),
+    var(--colorSecondary)
+  );
+  color: var(--colorWhite);
+}
+
+.activeCategoryBox {
+  padding: 5px 10px;
+  border: 1px solid var(--colorSecondary);
+  cursor: pointer;
+
+  background-color: var(--colorGrey);
+  color: var(--colorWhite);
+}
