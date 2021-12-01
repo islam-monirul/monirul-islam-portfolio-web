@@ -48,6 +48,28 @@ const TopBar = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/education"
+                style={{ color: "#23d5ab" }}
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#23a6d5",
+                }}
+              >
+                Education
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/experience"
+                style={{ color: "#23d5ab" }}
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#23a6d5",
+                }}
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/contact"
                 style={{ color: "#23d5ab" }}
                 activeStyle={{
