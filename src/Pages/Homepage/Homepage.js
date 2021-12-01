@@ -9,7 +9,7 @@ const Homepage = () => {
   let history = useHistory();
 
   return (
-    <Container>
+    <Container className="py-5 h-100 d-flex flex-column justify-content-center">
       <Image src={logo} className="img-fluid d-block mx-auto maindp" />
       <h3 className="fw-bold text-center mt-4">Monirul Islam</h3>
       <Row className="d-flex justify-content-center">

@@ -19,7 +19,7 @@ const WorkExperience = () => {
       });
   }, []);
   return (
-    <Container>
+    <Container className="py-5 h-100 d-flex flex-column justify-content-md-center">
       <Row className="d-flex justify-content-center">
         <h1 className="gradientHeading text-center">Work Experience</h1>
         <Col md={9} className="py-4">

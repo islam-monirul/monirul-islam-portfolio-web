@@ -67,7 +67,7 @@ const Contact = () => {
   };
 
   return (
-    <Container className="py-5">
+    <Container className="py-5 h-100 d-flex flex-column justify-content-md-center">
       <Row className="d-flex justify-content-center">
         <Col md={5} lg={4}>
           <h4 className="pb-3">Get in touch</h4>

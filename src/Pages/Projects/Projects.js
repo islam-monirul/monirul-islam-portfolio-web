@@ -13,8 +13,8 @@ const Projects = () => {
   }, [filter]);
 
   return (
-    <Container>
-      <h1 className="gradientHeading text-center">My Projects</h1>
+    <Container className="py-5">
+      <h1 className="gradientHeading text-center pt-5">My Projects</h1>
       <Row
         xs={1}
         md={2}

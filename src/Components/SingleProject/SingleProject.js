@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Row, Button, Col, Image } from "react-bootstrap";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { useParams } from "react-router";
 import "./SingleProduct.css";
@@ -19,55 +19,63 @@ const SingleProject = () => {
       <Row className="py-5">
         {project && (
           <>
-            <h1 className="gradientHeading fw-bold mb-4">{project?.name}</h1>
-            <h5 className="fw-bold">Project Description</h5>
-            <ul className="details">
-              {project.details.map((listItem) => (
-                <li key={listItem}>{listItem}</li>
-              ))}
-            </ul>
+            <Col>
+              <h1 className="gradientHeading fw-bold mb-4">{project?.name}</h1>
+              <h5 className="fw-bold">Project Description</h5>
+              <ul className="details">
+                {project.details.map((listItem) => (
+                  <li key={listItem}>{listItem}</li>
+                ))}
+              </ul>
 
-            <h5 className="fw-bold my-3">Used Technologies</h5>
-            <div className="techContainer">
-              {project.technologies.map((tech) => (
-                <div className="techBox">{tech}</div>
-              ))}
-            </div>
+              <h5 className="fw-bold mt-5 mb-3">Used Technologies</h5>
+              <div className="techContainer">
+                {project.technologies.map((tech) => (
+                  <div className="techBox">{tech}</div>
+                ))}
+              </div>
 
-            <h5 className="fw-bold mt-5 mb-3">Quick Links</h5>
-            <div className="linkContainer">
-              {project?.liveLink && (
-                <Button
-                  className="linkButton"
-                  onClick={() => window.open(`${project.liveLink}`, "_blank")}
-                >
-                  <FaExternalLinkAlt />{" "}
-                  <span className="align-middle">Live Preview</span>
-                </Button>
-              )}
-              {project?.githubClient !== "null" && (
-                <Button
-                  variant="dark"
-                  onClick={() =>
-                    window.open(`${project.githubClient}`, "_blank")
-                  }
-                >
-                  <FaGithub />{" "}
-                  <span className="align-middle">Github Client Side Code</span>
-                </Button>
-              )}
-              {project?.githubServer !== "null" && (
-                <Button
-                  variant="dark"
-                  onClick={() =>
-                    window.open(`${project.githubServer}`, "_blank")
-                  }
-                >
-                  <FaGithub />{" "}
-                  <span className="align-middle">Github Server Side Code</span>
-                </Button>
-              )}
-            </div>
+              <h5 className="fw-bold mt-5 mb-3">Quick Links</h5>
+              <div className="linkContainer">
+                {project?.liveLink && (
+                  <Button
+                    className="linkButton"
+                    onClick={() => window.open(`${project.liveLink}`, "_blank")}
+                  >
+                    <FaExternalLinkAlt />{" "}
+                    <span className="align-middle">Live Preview</span>
+                  </Button>
+                )}
+                {project?.githubClient !== "null" && (
+                  <Button
+                    variant="dark"
+                    onClick={() =>
+                      window.open(`${project.githubClient}`, "_blank")
+                    }
+                  >
+                    <FaGithub />{" "}
+                    <span className="align-middle">Client Side Code</span>
+                  </Button>
+                )}
+                {project?.githubServer !== "null" && (
+                  <Button
+                    variant="dark"
+                    onClick={() =>
+                      window.open(`${project.githubServer}`, "_blank")
+                    }
+                  >
+                    <FaGithub />{" "}
+                    <span className="align-middle">Server Side Code</span>
+                  </Button>
+                )}
+              </div>
+            </Col>
+
+            <Col md={6}>
+              <div className="p-2 border">
+                <Image src={project?.screenshot} className="img-fluid" />
+              </div>
+            </Col>
           </>
         )}
       </Row>
