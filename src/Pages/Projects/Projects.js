@@ -47,6 +47,9 @@ const Projects = () => {
           ></Spinner>
         )}
       </Row>
+      {projects.length === 0 && (
+        <p className="pt-3 text-center">No projects available</p>
+      )}
     </Container>
   );
 };
