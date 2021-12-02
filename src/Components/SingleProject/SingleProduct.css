@@ -47,3 +47,7 @@
   background-color: var(--colorGrey);
   border: 1px solid var(--colorGrey);
 }
+
+.starIcon {
+  color: goldenrod;
+}

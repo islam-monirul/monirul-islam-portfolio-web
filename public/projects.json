@@ -105,5 +105,37 @@
     "clientCountry": "United States",
     "review": "Another excellent job done. Complete the task as requested and made sure all my requests were satisfied. Thank you for the awesome work!",
     "reviewPlace": "Fiverr Marketplace"
+  },
+  {
+    "name": "Portfolio v2",
+    "category": "react",
+    "image": "https://i.ibb.co/HnvhdQH/portfolio-New.png",
+    "screenshot": "https://i.ibb.co/HnvhdQH/portfolio-New.png",
+    "technologies": [
+      "React.js",
+      "React-bootstrap",
+      "React-router",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React-Rating",
+      "React-icons"
+    ],
+    "details": [
+      "This is my personal portfolio website.",
+      "I have added only the client view for now.",
+      "Visitors can get information about me from here.",
+      "Visitors can see my projects, skills and contact info.",
+      "Email can be send to me. I have used getforms for this.",
+      "Admin dashboard for adding and updating my info will be implemented soon."
+    ],
+    "githubClient": "https://github.com/islam-monirul/monirul-islam-portfolio-web",
+    "githubServer": "https://github.com/islam-monirul/personal-portfolio-admin-server",
+    "liveLink": "https://islam-monirul.web.app/",
+    "rating": 0,
+    "clientName": "null",
+    "clientCountry": "null",
+    "review": "null",
+    "reviewPlace": "null"
   }
 ]

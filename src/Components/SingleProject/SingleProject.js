@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Button, Col, Image } from "react-bootstrap";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Rating from "react-rating";
 import { useParams } from "react-router";
 import "./SingleProduct.css";
 
@@ -69,6 +70,34 @@ const SingleProject = () => {
                   </Button>
                 )}
               </div>
+
+              {project?.rating !== 0 &&
+                project?.clientName !== null &&
+                project?.review !== "null" &&
+                project?.clientCountry !== "null" &&
+                project?.reviewPlace !== "null" && (
+                  <div className="mt-5">
+                    <hr />
+                    <p className="mt-3">
+                      <span className="align-middle primaryText">
+                        {project.clientName}
+                      </span>
+                      {" | "}
+                      <span className="align-middle text-secondary">
+                        {project.clientCountry}
+                      </span>
+                    </p>
+                    <Rating
+                      initialRating={project.rating}
+                      readonly
+                      emptySymbol="far fa-star"
+                      fullSymbol="fas fa-star"
+                      className="starIcon mb-2"
+                    />
+
+                    <p className="text-secondary">{project.review}</p>
+                  </div>
+                )}
             </Col>
 
             <Col lg={6} sm={12} className="py-4">
