@@ -1,20 +1,26 @@
 import React from "react";
-import { Col, Button, Image } from "react-bootstrap";
+import { Col, Button } from "react-bootstrap";
 import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import "./Project.css";
 
 const Project = (props) => {
-  const { name, image, liveLink, _id } = props.project;
+  const { name, liveLink, _id, screenshot } = props.project;
 
   const url = `projectDetails/${_id}`;
 
   return (
     <Col>
-      <figure className="figurebox p-2">
-        <Image src={image} className="img-fluid projectImg" />
+      <figure
+        className="figurebox p-2"
+        style={{
+          backgroundImage: `url(${screenshot})`,
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="captionDiv"></div>
         <figcaption className="hoverItems">
-          <h5 className="fw-bold gradientHeading">{name}</h5>
+          <h5 className="fw-bold text-white">{name}</h5>
           <div>
             <Button
               className="projectBtn"

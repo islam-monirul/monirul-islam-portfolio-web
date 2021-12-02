@@ -42,14 +42,10 @@ const Projects = () => {
         ) : (
           <Spinner
             animation="grow"
-            className="d-block mx-auto"
-            variant="white"
+            className="d-block mx-auto themeSpinner"
           ></Spinner>
         )}
       </Row>
-      {projects.length === 0 && (
-        <p className="pt-3 text-center">No projects available</p>
-      )}
     </Container>
   );
 };

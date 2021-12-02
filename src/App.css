@@ -116,6 +116,18 @@ body {
   border: none;
 }
 
+.primaryText {
+  color: var(--colorPrimary);
+}
+
+.secondaryText {
+  color: var(--colorSecondary);
+}
+
+.justifiedText {
+  text-align: justify;
+}
+
 @media screen and (min-width: 767px) and (max-width: 1100px) {
   .sideBar {
     width: 7%;

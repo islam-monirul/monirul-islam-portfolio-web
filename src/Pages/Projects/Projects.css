@@ -30,3 +30,9 @@
   background-color: var(--colorGrey);
   color: var(--colorWhite);
 }
+
+.themeSpinner {
+  color: var(--colorSecondary);
+  height: 40px;
+  width: 10px;
+}

@@ -86,3 +86,12 @@ export const Category = [
   "Bootstrap",
   "Wordpress",
 ];
+
+export const CurrentTech = [
+  "React.js, ",
+  "Node.js, ",
+  "Express.js, ",
+  "MongoDB, ",
+  "React-Router, ",
+  "React-Bootstrap. ",
+];

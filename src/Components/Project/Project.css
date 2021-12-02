@@ -28,9 +28,12 @@
 }
 
 .figurebox {
+  height: 25vh;
   position: relative;
   border: 1px solid var(--colorSecondary);
   overflow: hidden;
+
+  transition: ease-in-out 6s;
 }
 
 .hoverItems {
@@ -49,11 +52,26 @@
   transition: all 0.5s ease;
 }
 
+.captionDiv {
+  height: inherit;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
 .figurebox:hover .projectImg {
   transform: scale(1.2);
   opacity: 0;
 }
 
 .figurebox:hover .hoverItems {
+  opacity: 1;
+}
+
+.figurebox:hover {
+  background-position: bottom;
+}
+
+.figurebox:hover .captionDiv {
   opacity: 1;
 }

@@ -37,6 +37,17 @@ const TopBar = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
+                to="/about"
+                style={{ color: "#23d5ab" }}
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "#23a6d5",
+                }}
+              >
+                About me
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/projects"
                 style={{ color: "#23d5ab" }}
                 activeStyle={{

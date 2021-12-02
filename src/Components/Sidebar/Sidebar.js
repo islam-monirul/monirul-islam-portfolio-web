@@ -31,7 +31,7 @@ const Sidebar = () => {
         <p className="iconTooltip">Home</p>
         <FaHome className="icon" />
       </Button>
-      {/* <Button
+      <Button
         variant="transparent"
         className={active === 1 ? "iconBox activeIconBox" : "iconBox"}
         onClick={() => changeNav(1)}
@@ -41,7 +41,7 @@ const Sidebar = () => {
         <p className="iconTooltip">About</p>
         <FaUser className="icon" />
       </Button>
-      <Button
+      {/* <Button
         variant="transparent"
         className={active === 2 ? "iconBox activeIconBox" : "iconBox"}
         onClick={() => changeNav(2)}

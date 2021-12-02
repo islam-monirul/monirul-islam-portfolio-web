@@ -23,7 +23,12 @@
     ],
     "githubClient": "https://github.com/islam-monirul/niche-website-react-node-client-side",
     "githubServer": "https://github.com/islam-monirul/niche-website-node-server-side",
-    "liveLink": "https://motomaze-db828.web.app/"
+    "liveLink": "https://motomaze-db828.web.app/",
+    "rating": 0,
+    "clientName": "null",
+    "clientCountry": "null",
+    "review": "null",
+    "reviewPlace": "null"
   },
   {
     "name": "Mo-tour Phobia",
@@ -47,7 +52,12 @@
     ],
     "githubClient": "https://github.com/islam-monirul/tourism-website-react-node-client-side",
     "githubServer": "https://github.com/islam-monirul/tourism-website-node-server-side",
-    "liveLink": "https://mo-tour-phobia-tour-planner.web.app/"
+    "liveLink": "https://mo-tour-phobia-tour-planner.web.app/",
+    "rating": 0,
+    "clientName": "null",
+    "clientCountry": "null",
+    "review": "null",
+    "reviewPlace": "null"
   },
   {
     "name": "Monir Dental Healcare",
@@ -70,6 +80,30 @@
     ],
     "githubClient": "https://github.com/islam-monirul/healthcare-related-website-react",
     "githubServer": "null",
-    "liveLink": "https://islam-monirul-monir-dental-healthcare-react.netlify.app/"
+    "liveLink": "https://islam-monirul-monir-dental-healthcare-react.netlify.app/",
+    "rating": 0,
+    "clientName": "null",
+    "clientCountry": "null",
+    "review": "null",
+    "reviewPlace": "null"
+  },
+  {
+    "name": "Talie Investments",
+    "category": "wordpress",
+    "image": "https://i.ibb.co/Qr41FYZ/monirdentalcare.png",
+    "screenshot": "https://i.ibb.co/WBmL79W/talie-invesment.jpg",
+    "technologies": ["Wordpress", "Elementor Page Builder"],
+    "details": [
+      "This website was designed and developed for one of my clients from Fiverr Marketplace using wordpress.",
+      "This website is for an investment company focused on value-add opportunities in multifamily real estate assets."
+    ],
+    "githubClient": "null",
+    "githubServer": "null",
+    "liveLink": "https://talieinvestments.com/",
+    "rating": 5,
+    "clientName": "@anettebc",
+    "clientCountry": "United States",
+    "review": "Another excellent job done. Complete the task as requested and made sure all my requests were satisfied. Thank you for the awesome work!",
+    "reviewPlace": "Fiverr Marketplace"
   }
 ]
