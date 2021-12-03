@@ -23,7 +23,7 @@ const Education = () => {
   return (
     <Container className="py-5">
       <Row className="d-flex justify-content-center">
-        <h1 className="gradientHeading text-center">Education</h1>
+        <h1 className="gradientHeading text-center fw-bold">Education</h1>
         <Col md={9} className="py-4">
           <VerticalTimeline>
             {educations?.map((education) => (

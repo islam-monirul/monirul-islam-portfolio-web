@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Container className="py-5">
       <Row className="d-flex justify-content-center px-md-4">
-        <h1 className="gradientHeading text-center mb-3">About Me</h1>
+        <h1 className="gradientHeading text-center mb-3 fw-bold">About Me</h1>
         <div>
           <p className="justifiedText">
             Hi, I am <span className="fw-bold">Monirul Islam</span>. I am a full
@@ -30,7 +30,8 @@ const About = () => {
             <span className="gradientHeading">
               JavaScript, PHP, MySQL, Wordpress, HTML, CSS, Tailwind CSS
             </span>{" "}
-            and many more technologies.
+            and many more technologies. Along with web development, I have
+            expertise in Graphic Design too.
           </p>
 
           <p className="justifiedText">

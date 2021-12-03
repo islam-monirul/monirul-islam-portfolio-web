@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <Container className="py-5">
-      <h1 className="gradientHeading text-center pt-5">My Projects</h1>
+      <h1 className="gradientHeading text-center pt-5 fw-bold">My Projects</h1>
       <div className="py-4 categoryContainer">
         {Category.map((cat) => (
           <div

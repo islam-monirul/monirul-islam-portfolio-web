@@ -3,6 +3,7 @@ export const MyProjects = [
     name: "MotoMaze",
     category: "mern",
     image: "https://i.ibb.co/pvWZtJW/motomaze.png",
+    screenshot: "https://i.ibb.co/Q7V6Sxj/motomaza-SS.png",
     technologies: [
       "React.js",
       "React-bootstrap",
@@ -25,11 +26,17 @@ export const MyProjects = [
     githubServer:
       "https://github.com/islam-monirul/niche-website-node-server-side",
     liveLink: "https://motomaze-db828.web.app/",
+    rating: 0,
+    clientName: "null",
+    clientCountry: "null",
+    review: "null",
+    reviewPlace: "null",
   },
   {
     name: "Mo-tour Phobia",
     category: "react",
     image: "https://i.ibb.co/Ms233Fk/motourphobia.png",
+    screenshot: "https://i.ibb.co/LJD3Nrn/motour-Phobia-SS.png",
     technologies: [
       "React.js",
       "React-bootstrap",
@@ -50,11 +57,17 @@ export const MyProjects = [
     githubServer:
       "https://github.com/islam-monirul/tourism-website-node-server-side",
     liveLink: "https://mo-tour-phobia-tour-planner.web.app/",
+    rating: 0,
+    clientName: "null",
+    clientCountry: "null",
+    review: "null",
+    reviewPlace: "null",
   },
   {
     name: "Monir Dental Healcare",
     category: "react",
     image: "https://i.ibb.co/Qr41FYZ/monirdentalcare.png",
+    screenshot: "https://i.ibb.co/WcgWtyz/monirdental-SS.png",
     technologies: [
       "React.js",
       "React-bootstrap",
@@ -74,6 +87,65 @@ export const MyProjects = [
     githubServer: "null",
     liveLink:
       "https://islam-monirul-monir-dental-healthcare-react.netlify.app/",
+    rating: 0,
+    clientName: "null",
+    clientCountry: "null",
+    review: "null",
+    reviewPlace: "null",
+  },
+  {
+    name: "Talie Investments",
+    category: "wordpress",
+    image: "https://i.ibb.co/Qr41FYZ/monirdentalcare.png",
+    screenshot: "https://i.ibb.co/WBmL79W/talie-invesment.jpg",
+    technologies: ["Wordpress", "Elementor Page Builder"],
+    details: [
+      "This website was designed and developed for one of my clients from Fiverr Marketplace using wordpress.",
+      "This website is for an investment company focused on value-add opportunities in multifamily real estate assets.",
+    ],
+    githubClient: "null",
+    githubServer: "null",
+    liveLink: "https://talieinvestments.com/",
+    rating: 5,
+    clientName: "@anettebc",
+    clientCountry: "United States",
+    review:
+      "Another excellent job done. Complete the task as requested and made sure all my requests were satisfied. Thank you for the awesome work!",
+    reviewPlace: "Fiverr Marketplace",
+  },
+  {
+    name: "Portfolio v2",
+    category: "react",
+    image: "https://i.ibb.co/HnvhdQH/portfolio-New.png",
+    screenshot: "https://i.ibb.co/HnvhdQH/portfolio-New.png",
+    technologies: [
+      "React.js",
+      "React-bootstrap",
+      "React-router",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React-Rating",
+      "React-icons",
+    ],
+    details: [
+      "This is my personal portfolio website.",
+      "I have added only the client view for now.",
+      "Visitors can get information about me from here.",
+      "Visitors can see my projects, skills and contact info.",
+      "Email can be send to me. I have used getforms for this.",
+      "Admin dashboard for adding and updating my info will be implemented soon.",
+    ],
+    githubClient:
+      "https://github.com/islam-monirul/monirul-islam-portfolio-web",
+    githubServer:
+      "https://github.com/islam-monirul/personal-portfolio-admin-server",
+    liveLink: "https://islam-monirul.web.app/",
+    rating: 0,
+    clientName: "null",
+    clientCountry: "null",
+    review: "null",
+    reviewPlace: "null",
   },
 ];
 
@@ -81,9 +153,9 @@ export const Category = [
   "All",
   "React",
   "MERN",
-  "JavaScript",
-  "PHP",
-  "Bootstrap",
+  // "JavaScript",
+  // "PHP",
+  // "Bootstrap",
   "Wordpress",
 ];
 
@@ -95,3 +167,28 @@ export const CurrentTech = [
   "React-Router, ",
   "React-Bootstrap. ",
 ];
+
+export const Technologies = {
+  programmingLanguages: [
+    "/images/devicons/c.svg",
+    "/images/devicons/js.svg",
+    "/images/devicons/php.svg",
+    "/images/devicons/java.svg",
+  ],
+  frontend: [
+    "/images/devicons/reactjs.svg",
+    "/images/devicons/bootstrap.svg",
+    "/images/devicons/tailwindcss.svg",
+    "/images/devicons/html.svg",
+    "/images/devicons/css.svg",
+  ],
+  backend: ["/images/devicons/nodejs.svg", "/images/devicons/expressjs.svg"],
+  database: ["/images/devicons/mysql.svg", "/images/devicons/mongoDB.svg"],
+  familiar: [
+    "/images/devicons/py.svg",
+    "/images/devicons/typeScript.svg",
+    "/images/devicons/laravel.svg",
+    "/images/devicons/nextjs.svg",
+    "/images/devicons/material ui.svg",
+  ],
+};
