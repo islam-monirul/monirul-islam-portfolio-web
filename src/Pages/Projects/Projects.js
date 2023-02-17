@@ -9,7 +9,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(`https://mighty-reef-51320.herokuapp.com/projects/${filter}`)
+    fetch(`https://personal-portfolio-20s7.onrender.com/projects/${filter}`)
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, [filter]);

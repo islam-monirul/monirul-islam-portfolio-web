@@ -10,7 +10,7 @@ const SingleProject = () => {
   const { projectId } = useParams();
 
   useEffect(() => {
-    fetch(`https://mighty-reef-51320.herokuapp.com/project/${projectId}`)
+    fetch(`https://personal-portfolio-20s7.onrender.com/project/${projectId}`)
       .then((res) => res.json())
       .then((data) => setProject(data));
   }, [projectId]);

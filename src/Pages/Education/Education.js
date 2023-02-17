@@ -12,7 +12,7 @@ const Education = () => {
   const [educations, setEducations] = useState();
 
   useEffect(() => {
-    fetch("https://mighty-reef-51320.herokuapp.com/education")
+    fetch("https://personal-portfolio-20s7.onrender.com/education")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

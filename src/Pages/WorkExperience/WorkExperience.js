@@ -11,7 +11,7 @@ const WorkExperience = () => {
   const [works, setWorks] = useState();
 
   useEffect(() => {
-    fetch("https://mighty-reef-51320.herokuapp.com/works")
+    fetch("https://personal-portfolio-20s7.onrender.com/works")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
